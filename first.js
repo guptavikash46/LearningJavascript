@@ -14,7 +14,13 @@ console.log(func(num));
 */
 describe("pow", function () {
 
-    it('it raises x to power n', function () {
-        assert.equal(pow(2,3), 8);
-    });
+  function makeTest(x) {
+      let square = x*x;
+      it(`The square of ${x} is ${square}`, function () {
+          assert.equal(pow(x,2),square);
+      });
+  }
+  for(let i = 0; i< 5;i++){
+      makeTest(i);
+  }
 } );
