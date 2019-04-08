@@ -26,7 +26,7 @@ range[Symbol.iterator] = function (){
 for (let x of range){
     alert(x);
 }
-*/
+
 let str = 'vikas';
 let itr = str[Symbol.iterator]();
 while (true){
@@ -48,3 +48,31 @@ let arrayLike = {
 let arr = Array.from(arrayLike); // (*)
 alert(arr.pop()); // World (method works)
 
+let date = new Date("2019-04-03");
+alert(date);
+
+
+
+let student = {
+    name: 'John',
+    age: 30,
+    isAdmin: false,
+    courses: ['html', 'css', 'js'],
+    wife: null
+};
+
+let json = JSON.stringify(student);
+
+alert(typeof json); // we've got a string!
+
+alert(json);
+ */
+function text(phrase){
+   return class{
+       sayHi(){
+           alert(phrase);
+       }
+   }
+}
+class A extends text("Hello world from vikas"){}
+new A().sayHi();
