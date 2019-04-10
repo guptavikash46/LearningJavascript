@@ -1,0 +1,44 @@
+body{
+    font-family: 'Heebo', sans-serif;
+    background-color: #14043f;
+}
+
+.one{
+    text-align: center;
+    color: white;
+    background-color: #14043f;
+    border: 40px solid #12be5d;
+    border-top: 0px;
+}
+#first{
+    padding: 50px;
+}
+#second{
+    padding: 50px;
+}
+#third{
+    font-size: x-large;
+}
+.form{
+    font-size: 30px;
+}
+#firstName{
+    font-size: x-large;
+    width: 30%;
+}
+#lastName{
+    font-size: x-large;
+    width: 30%;
+}
+#email{
+    font-size: x-large;
+    width: 30%;
+}
+#submitButton{
+    background-color: #cb981a;
+    font-size: x-large;
+    border-radius: 10px;
+    padding: 1%;
+    text-align: center;
+    width: 10%;
+}
